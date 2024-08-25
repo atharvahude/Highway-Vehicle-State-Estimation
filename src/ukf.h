@@ -3,7 +3,8 @@
 
 #include "Eigen/Dense"
 #include "measurement_package.h"
-
+using Eigen::MatrixXd;
+using Eigen::VectorXd;
 class UKF {
  public:
   /**
@@ -40,6 +41,7 @@ class UKF {
    * @param meas_package The measurement at k+1
    */
   void UpdateRadar(MeasurementPackage meas_package);
+
 
 
   // initially set to false, set to true in first call of ProcessMeasurement
